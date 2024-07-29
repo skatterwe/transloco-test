@@ -2,7 +2,12 @@
   "name": "@transloco-test/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "ng": "nx",
+    "i18n:extract": "transloco-keys-manager extract --project=sample-lib --output ../assets/i18n --langs en de",
+    "i18n:find": "transloco-keys-manager find",
+    "i18n:optimize": "transloco-optimize dist/libs/sample-lib/assets/i18n"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.1.0",
@@ -13,6 +18,7 @@
     "@angular/platform-browser": "~18.1.0",
     "@angular/platform-browser-dynamic": "~18.1.0",
     "@angular/router": "~18.1.0",
+    "@jsverse/transloco": "^7.4.3",
     "@nx/angular": "19.5.3",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
@@ -28,6 +34,8 @@
     "@angular/cli": "~18.1.0",
     "@angular/compiler-cli": "~18.1.0",
     "@angular/language-service": "~18.1.0",
+    "@jsverse/transloco-keys-manager": "^4.2.4",
+    "@jsverse/transloco-optimize": "^7.0.1",
     "@nx/eslint": "19.5.3",
     "@nx/eslint-plugin": "19.5.3",
     "@nx/jest": "19.5.3",

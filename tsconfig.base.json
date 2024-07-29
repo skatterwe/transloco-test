@@ -13,8 +13,12 @@
     "lib": ["es2020", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@transloco-test/sample-lib": ["libs/sample-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
